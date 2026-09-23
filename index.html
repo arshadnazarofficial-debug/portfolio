@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arshad | Cloud & DevOps Portfolio</title>
+  <meta name="description" content="Portfolio of Arshad, BCA graduate learning Cloud Computing and DevOps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">Arshad</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <p class="hero-hello">Hi, I'm</p>
+      <h1>Arshad</h1>
+      <p class="hero-role">BCA graduate building toward a career in Cloud Computing and DevOps.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+
+      <ol class="pipeline" id="pipeline" aria-label="My learning pipeline">
+        <li>Linux</li>
+        <li>Git</li>
+        <li>Docker</li>
+        <li>Nginx</li>
+        <li>Jenkins</li>
+        <li>Cloud</li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I completed my Bachelor of Computer Applications at St. Joseph's Academy of Higher Education and Research (Mahatma Gandhi University) in 2026.</p>
+        <p>Right now I'm doing a post-BCA course in Cloud Computing and DevOps. I like understanding how an application goes from code on my laptop to a running service on a server.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Programming</h3>
+          <ul><li>Python</li><li>Django</li><li>SQL</li></ul>
+        </div>
+        <div>
+          <h3>Web</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </div>
+        <div>
+          <h3>Systems</h3>
+          <ul><li>Linux (Ubuntu)</li><li>Command line</li><li>Nginx</li></ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul><li>Git and GitHub</li><li>Docker</li><li>Jenkins</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURRENTLY LEARNING -->
+    <section id="learning" class="section">
+      <h2>Currently learning</h2>
+      <p class="lead">This is the path I'm following, from a running Linux server to the cloud. Select a step to read more.</p>
+      <div class="steps" id="steps">
+        <button class="step active" data-info="Ubuntu, file permissions, users, services and shell commands. Everything else runs on top of this.">Linux</button>
+        <button class="step" data-info="Version control with commits, branches and merges, plus GitHub for hosting code and working with others.">Git and GitHub</button>
+        <button class="step" data-info="Packaging an app and its dependencies into a container so it runs the same everywhere.">Docker</button>
+        <button class="step" data-info="Serving websites, acting as a reverse proxy in front of Django apps.">Nginx</button>
+        <button class="step" data-info="Automating build and test steps so every code change is checked without manual work.">Jenkins</button>
+        <button class="step" data-info="Running applications on cloud infrastructure and understanding compute, storage and networking.">Cloud Computing</button>
+      </div>
+      <p class="step-info" id="stepInfo" aria-live="polite">Ubuntu, file permissions, users, services and shell commands. Everything else runs on top of this.</p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <article class="project">
+        <div>
+          <h3>PetCare</h3>
+          <p>A multi-role web platform for pet care built with Django, with separate experiences for different types of users.</p>
+        </div>
+        <ul class="tags"><li>Python</li><li>Django</li><li>HTML/CSS</li></ul>
+        <a href="#" class="project-link">GitHub link coming soon</a>
+      </article>
+      <article class="project">
+        <div>
+          <h3>This portfolio</h3>
+          <p>A static site written by hand. Next I'll containerise it with Docker, serve it with Nginx and deploy it through a Jenkins pipeline.</p>
+        </div>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        <a href="#" class="project-link">GitHub link coming soon</a>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="lead">Looking for internships and entry-level roles in cloud and DevOps. Send me a message.</p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <p class="form-status" id="formStatus" role="status"></p>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+      <p class="links">
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Arshad. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
